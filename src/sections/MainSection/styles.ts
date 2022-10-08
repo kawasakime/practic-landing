@@ -12,6 +12,7 @@ export const MainSectionContainer = styled.div`
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 23vh;
 `;
 
 export const Image = styled.img`

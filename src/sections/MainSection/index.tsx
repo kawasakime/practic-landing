@@ -11,7 +11,7 @@ import Button from "../../components/UI/Button";
 const MainSection: React.FC = () => {
   return (
     <S.MainSection>
-      <S.Image src="./assets/img/main_img.png" />
+      <S.Image src="./assets/img/main.png" />
       <C.Wrapper>
         <S.MainSectionContainer>
           <Header phone={config.information.phone} />

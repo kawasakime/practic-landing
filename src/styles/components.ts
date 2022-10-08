@@ -32,13 +32,20 @@ export const Button = styled.a<{ primary: boolean }>`
   }
 `;
 
-export const Social = styled.ul`
+export const LinkList = styled.ul<{ margin: string }>`
   display: flex;
   list-style-type: none;
-  padding-bottom: 23vh;
 
   li {
-    margin-right: 40px;
+    margin: 0 ${(props) => props.margin};
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
     a {
       text-decoration: none;
       color: ${({ theme }) => theme.colors.secondary};
@@ -48,3 +55,11 @@ export const Social = styled.ul`
     }
   }
 `;
+
+export const Title = styled.h1`
+  font-size: 30px;
+  font-weight: ${({ theme }) => theme.fontWeight.light};
+  white-space: pre-line;
+  text-transform: uppercase;
+`;
+
