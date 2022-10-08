@@ -1,26 +1,15 @@
 import { config } from "../configs/config"
+import { ITheme } from "../interfaces/styled"
 
-interface ThemeInterface {
-  colors: {
-    primary: string,
-    secondary: string
-  },
-  fontWeight: {
-    light: number,
-    regular: number,
-    bold: number,
-  },
-  duration: string
-}
-
-export const baseTheme: ThemeInterface = {
+export const baseTheme: ITheme = {
   colors: {
     primary: config.colors.primary,
     secondary: config.colors.secondary
   },
   fontWeight: {
-    light: 200,
+    light: 300,
     regular: 400,
+    semiBold: 600,
     bold: 700,
   },
   duration: "0.3s"
