@@ -8,6 +8,7 @@ export interface ITheme {
     regular: number,
     semiBold: number,
     bold: number,
+    black: number
   },
   duration: string
 }

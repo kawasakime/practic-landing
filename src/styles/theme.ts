@@ -11,6 +11,7 @@ export const baseTheme: ITheme = {
     regular: 400,
     semiBold: 600,
     bold: 700,
+    black: 900
   },
   duration: "0.3s"
 }
