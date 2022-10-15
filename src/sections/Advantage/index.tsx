@@ -12,7 +12,7 @@ const Advantage = () => {
         <C.Title className="title">{config.advantage.title}</C.Title>
         <S.AdvantageItems>
           {config.advantage.items.map((item, i) => (
-            <S.AdvantageItem>
+            <S.AdvantageItem key={i}>
               <h1>0{i+1}</h1>
               <p>{item}</p>
             </S.AdvantageItem>

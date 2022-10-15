@@ -8,6 +8,7 @@ import GlobalStyles from "./styles/global";
 import { baseTheme } from "./styles/theme";
 import Services from "./sections/Services";
 import Advantage from "./sections/Advantage";
+import Form from "./sections/Form";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutUs />
       <Services />
       <Advantage />
+      <Form />
       <GlobalStyles />
     </ThemeProvider>
   );

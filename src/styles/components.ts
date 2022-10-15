@@ -25,12 +25,15 @@ export const Button = styled.a<{ primary: boolean }>`
   text-decoration: none;
   cursor: pointer;
   transition: ${({ theme }) => theme.duration};
+  background: none;
 
   &:hover {
     background: ${(props) => getColor(props.primary)};
     color: ${(props) => getColor(!props.primary)};
   }
 `;
+
+export const SubmitButton = Button.withComponent('button');
 
 export const LinkList = styled.ul<{ margin: string }>`
   display: flex;
@@ -63,3 +66,15 @@ export const Title = styled.h1`
   text-transform: uppercase;
 `;
 
+export const Input = styled.input`
+  width: 270px;
+  height: 50px;
+  outline: none;
+  background-color: ${({theme}) => theme.colors.secondary}1d;
+  border-radius: 5px;
+  border: 1px solid ${({theme}) => theme.colors.secondary};
+  color: ${({theme}) => theme.colors.secondary};
+  font-size: 15px;
+  padding: 0 20px;
+  margin: 0 15px;
+`

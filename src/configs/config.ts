@@ -78,7 +78,7 @@ export const config = {
       "На нашей кухне больше десятка поваров, поэтому блюда готовятся в течении 10 минут после вашего заказа",
     ],
   },
-  section_5: {
+  form: {
     title: {
       firstLine: "Есть вопросы или хотите забронировать место?",
       secondLine: "Отправьте заявку и наш менеджер свяжется с вами.",
@@ -86,7 +86,7 @@ export const config = {
     inputsText: ["Ваше имя", "Ваш номер"],
     btnText: "Отправить",
   },
-  section_6: [
+  reviews: [
     {
       name: "Семён",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",

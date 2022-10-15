@@ -5,6 +5,7 @@ export const Advantage = styled.div`
 
   .title {
     text-align: center;
+    margin-top: 0;
   }
 `;
 
