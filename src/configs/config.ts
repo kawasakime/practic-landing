@@ -1,4 +1,6 @@
-export const config = {
+import { IConfig } from "../interfaces/config";
+
+export const config: IConfig = {
   title: "Kioto", // title сайта
   colors: {
     primary: "#16130F",
@@ -30,8 +32,7 @@ export const config = {
       primary: "Японская кухня",
       secondary: "от лучших поваров",
     },
-    description:
-      "У нас всегда доброжелательная \n атмосфера и свежая еда.",
+    description: "У нас всегда доброжелательная \n атмосфера и свежая еда.",
     btnText: "Забронировать",
   },
   aboutUs: {
@@ -49,23 +50,23 @@ export const config = {
       },
       {
         title: "Поке и боулы",
-        price: "340",
+        price: 340,
       },
       {
         title: "Более 10 видов пицц",
-        price: "400",
+        price: 400,
       },
       {
         title: "Основные блюда",
-        price: "220",
+        price: 220,
       },
       {
         title: "Десерты",
-        price: "290",
+        price: 290,
       },
       {
         title: "Алкогольные и безалкогольные напитки",
-        price: "400",
+        price: 400,
       },
     ],
   },
@@ -80,31 +81,38 @@ export const config = {
   },
   form: {
     title: {
-      firstLine: "Есть вопросы или хотите забронировать место?",
-      secondLine: "Отправьте заявку и наш менеджер свяжется с вами.",
+      primary: "Есть вопросы или хотите забронировать место?",
+      secondary: "Отправьте заявку и наш менеджер свяжется с вами.",
     },
     inputsText: ["Ваше имя", "Ваш номер"],
     btnText: "Отправить",
   },
-  reviews: [
-    {
-      name: "Семён",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
-    },
-    {
-      name: "Семён",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
-    },
-    {
-      name: "Семён",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
-    },
-    {
-      name: "Семён",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
-    },
-  ],
-  section_7: {
+  reviews: {
+    title: "Отзывы",
+    items: [
+      {
+        name: "Семён",
+        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        rating: 5,
+      },
+      {
+        name: "Семён",
+        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        rating: 5,
+      },
+      {
+        name: "Семён",
+        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        rating: 5,
+      },
+      {
+        name: "Семён",
+        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        rating: 5,
+      },
+    ],
+  },
+  contacts: {
     coordinates: "47.2372031, 39.7120899",
     time: "Пн. - Вс. 09:00 - 22:00",
   },

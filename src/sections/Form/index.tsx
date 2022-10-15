@@ -22,9 +22,9 @@ const Form = () => {
     <S.Form>
       <S.Background src="./assets/img/form_bg.png" />
       <S.Title>
-        {config.form.title.firstLine}
+        {config.form.title.primary}
         <br />
-        <span>{config.form.title.secondLine}</span>
+        <span>{config.form.title.secondary}</span>
       </S.Title>
       <form action="">
         <S.Inputs>

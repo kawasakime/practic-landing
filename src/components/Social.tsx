@@ -1,9 +1,9 @@
 import React from "react";
-import { SocialItem } from "../interfaces/config";
+import { ISocialItem } from "../interfaces/config";
 import { LinkList } from "../styles/components";
 
 interface SocialProps {
-  items: SocialItem[];
+  items: ISocialItem[];
 }
 
 const Social: React.FC<SocialProps> = ({ items }) => {
