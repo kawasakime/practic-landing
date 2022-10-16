@@ -20,8 +20,11 @@ export const Form = styled.div`
 }
 `;
 
-export const Background = styled.img`
+export const Background = styled.div`
   position: absolute;
+  background: url('./assets/img/form_bg.png');
+  background-position: center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
   z-index: 1;

@@ -1,12 +1,11 @@
 import React from "react";
-import Button from "../../components/UI/Button";
 import Input from "../../components/UI/Input";
 import SubmitButton from "../../components/UI/SubmitButton";
 import { config } from "../../configs/config";
 
 import * as S from "./styles";
 
-const Form = () => {
+const Form: React.FC = () => {
   const [nameValue, setNameValue] = React.useState("");
   const [phoneValue, setPhoneValue] = React.useState("");
 
@@ -20,7 +19,7 @@ const Form = () => {
 
   return (
     <S.Form>
-      <S.Background src="./assets/img/form_bg.png" />
+      <S.Background />
       <S.Title>
         {config.form.title.primary}
         <br />

@@ -5,7 +5,7 @@ import * as C from "../../styles/components";
 
 import { config } from "../../configs/config";
 
-const Services = () => {
+const Services: React.FC = () => {
   return (
     <S.Services id="section-3">
       <C.Wrapper className="wrapper">

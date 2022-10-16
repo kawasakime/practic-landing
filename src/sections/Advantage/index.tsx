@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 import { config } from "../../configs/config";
 
-const Advantage = () => {
+const Advantage: React.FC = () => {
   return (
     <S.Advantage>
       <C.Wrapper>
