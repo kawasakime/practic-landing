@@ -6,11 +6,6 @@ export const Reviews = styled.div`
   .title {
     text-align: center;
   }
-
-  .wrapper {
-    width: 100%;
-    overflow: hidden;
-  }
 `;
 
 export const ReviewsWrapper = styled.div`
@@ -40,9 +35,6 @@ export const ReviewItem = styled.div`
   margin-left: 90px;
   padding-right: 15px;
   margin-right: 15px;
-
-  &.active {
-  }
 
   img {
     transform: translateX(-50%);

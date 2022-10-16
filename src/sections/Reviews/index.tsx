@@ -25,18 +25,6 @@ const Reviews: React.FC = () => {
     console.log("ok");
   }
 
-  function onBlur(e: React.FocusEvent<HTMLInputElement>) {
-    console.log(e.target.name);
-    switch (e.target.name) {
-      case "test":
-        console.log("test");
-        break;
-      case "hello":
-        console.log("hello");
-        break;
-    }
-  }
-
   return (
     <S.Reviews>
       <S.ReviewsWrapper>
@@ -79,7 +67,6 @@ const Reviews: React.FC = () => {
           />
         </S.Arrows>
       </S.ReviewsWrapper>
-      <input name="hello" type="text" onBlur={onBlur} />
     </S.Reviews>
   );
 };
