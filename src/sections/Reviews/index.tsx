@@ -22,11 +22,10 @@ const Reviews: React.FC = () => {
 
   function nextSlide() {
     setActiveSlide((prev) => ++prev);
-    console.log("ok");
   }
 
   return (
-    <S.Reviews>
+    <S.Reviews id="section-5">
       <S.ReviewsWrapper>
         <C.Title className="title">{config.reviews.title}</C.Title>
         <S.ReviewsContainer

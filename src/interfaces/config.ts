@@ -61,7 +61,7 @@ export interface IConfig {
     items: IReviewItem[];
   };
   contacts: {
-    coordinates: string;
+    coordinates: number[];
     time: string
   }
 }

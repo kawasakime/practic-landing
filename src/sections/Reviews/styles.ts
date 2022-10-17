@@ -38,6 +38,11 @@ export const ReviewItem = styled.div`
 
   img {
     transform: translateX(-50%);
+    max-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 50%;
   }
 
   h3 {

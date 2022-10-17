@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexColumnCenter } from "../../styles/components";
 
 export const Form = styled.div`
   position: relative;
@@ -8,6 +9,11 @@ export const Form = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media ${({theme}) => theme.media.medium} {
+    height: auto;
+    padding: 50px 40px;
+  }
 
   &>* {
     z-index: 2;
@@ -37,6 +43,10 @@ export const Title = styled.h1`
   color: ${({theme}) => theme.colors.secondary};
   font-weight: ${({theme}) => theme.fontWeight.light};
   margin-bottom: 15px;
+  margin-top: 0;
+  @media ${({theme}) => theme.media.medium} {
+    margin-bottom: 30px;
+  }
   
   span {
     font-size: 18px;
@@ -47,4 +57,12 @@ export const Title = styled.h1`
 
 export const Inputs = styled.div`
   margin-bottom: 20px;
+
+  @media ${({theme}) => theme.media.medium} {
+    ${FlexColumnCenter}
+
+    &>* {
+      margin-bottom: 20px;
+    }
+  }
 `

@@ -113,7 +113,7 @@ export const config: IConfig = {
     ],
   },
   contacts: {
-    coordinates: "47.2372031, 39.7120899",
+    coordinates: [47.2372031, 39.7120899],
     time: "Пн. - Вс. 09:00 - 22:00",
   },
 };

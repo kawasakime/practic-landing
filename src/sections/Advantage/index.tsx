@@ -7,7 +7,7 @@ import { config } from "../../configs/config";
 
 const Advantage: React.FC = () => {
   return (
-    <S.Advantage>
+    <S.Advantage id="section-4">
       <C.Wrapper>
         <C.Title className="title">{config.advantage.title}</C.Title>
         <S.AdvantageItems>
