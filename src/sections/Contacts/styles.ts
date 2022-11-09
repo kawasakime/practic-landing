@@ -25,7 +25,7 @@ export const Contacts = styled.div`
 
 export const ContactsContainer = styled.div`
   position: relative;
-  /* height: 460px; */
+  height: 460px;
   width: 460px;
   padding: 34px;
   background: ${({ theme }) => theme.colors.secondary};
@@ -38,7 +38,6 @@ export const ContactsContainer = styled.div`
   @media ${({ theme }) => theme.media.lessLarge} {
     width: 100%;
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     place-items: center;
     gap: 20px;
   }

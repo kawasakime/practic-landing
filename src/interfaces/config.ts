@@ -12,6 +12,7 @@ export interface IReviewItem {
   name: string;
   text: string;
   rating: number;
+  img: string;
 }
 
 export interface IConfig {
@@ -19,6 +20,9 @@ export interface IConfig {
   colors: {
     primary: string;
     secondary: string;
+    blackText: string;
+    whiteText: string;
+    additional: string;
   };
   information: {
     phone: string;
@@ -62,6 +66,6 @@ export interface IConfig {
   };
   contacts: {
     coordinates: number[];
-    time: string
-  }
+    time: string;
+  };
 }

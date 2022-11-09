@@ -1,8 +1,7 @@
+import { config } from "../configs/config";
+
 export interface ITheme {
-  colors: {
-    primary: string;
-    secondary: string;
-  };
+  colors: typeof config.colors;
   fontWeight: {
     light: number;
     regular: number;

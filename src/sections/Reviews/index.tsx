@@ -37,7 +37,8 @@ const Reviews: React.FC = () => {
               key={i}
               className={activeSlide === i ? "active" : undefined}
             >
-              <img src={`./assets/img/reviews/${i + 1}.png`} alt="" />
+              {/* <img src={`./assets/img/reviews/${item.img}`} alt="" /> */}
+              <S.ImageContainer imgUrl={`./assets/img/reviews/${item.img}`}/>
               <S.ItemWrapper>
                 <S.Rating>
                   {[...Array(5)].map((_, i) => (

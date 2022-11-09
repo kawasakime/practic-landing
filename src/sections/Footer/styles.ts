@@ -20,7 +20,7 @@ export const Footer = styled.div`
   }
 
   h3 {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.whiteText};
     font-weight: ${({ theme }) => theme.fontWeight.semiBold};
     @media ${({ theme }) => theme.media.medium} {
       font-size: 15px;

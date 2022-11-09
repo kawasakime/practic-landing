@@ -5,10 +5,13 @@ export const config: IConfig = {
   colors: {
     primary: "#16130F",
     secondary: "#FFFFFF",
+    blackText: "#16130F",
+    whiteText: "#ffffff",
+    additional: "#D0D0CF",
   },
   information: {
     // информация
-    phone: "+7 (000) 000-00-00",
+    phone: "+7 (952) 883-55-13",
     email: "kioto@yandex.ru",
     address: "г. Москва, ул. Маяковского 65",
   },
@@ -29,16 +32,17 @@ export const config: IConfig = {
   navigation: ["О нас", "Меню", "Преимущества", "Отзывы", "Контакты"], // как будут подписаны секции в навигационном баре
   mainSection: {
     title: {
-      primary: "Японская кухня",
-      secondary: "от лучших поваров",
+      primary: "Ресторан KIOTO",
+      secondary: "Кусочек Японии \nв твоём сердце",
     },
-    description: "У нас всегда доброжелательная \n атмосфера и свежая еда.",
+    description:
+      "Вкусная еда, внимательное обслуживание, \nаутентичный интерьер для вашего \nлучшего времяпровождения",
     btnText: "Забронировать",
   },
   aboutUs: {
     title: "Современный интерьер\nи изысканная кухня",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id.",
+      "Ресторан Киото - маленький островок Японии в самом центре Москвы. Мы работаем каждый день, чтобы оставить наших гостей счастливыми. Лапшу для рамена мы готовим сами в нашем ресторане. В меню вы можете также найти различные закуски, суши, роллы и десерты, а также лимонады, милкшейки и фирменные японские коктейли. Каждый наш гость обязательно найдёт что-то специально для себя! Приходите к нам в гости, чтобы расслабиться и насладиться многогранной атмосферой Японии.",
     btnText: "Забронировать",
   },
   services: {
@@ -73,10 +77,10 @@ export const config: IConfig = {
   advantage: {
     title: "Преимущества",
     items: [
-      "На нашей кухне больше десятка поваров, поэтому блюда готовятся в течении 10 минут после вашего заказа",
-      "На нашей кухне больше десятка поваров, поэтому блюда готовятся в течении 10 минут после вашего заказа",
-      "На нашей кухне больше десятка поваров, поэтому блюда готовятся в течении 10 минут после вашего заказа",
-      "На нашей кухне больше десятка поваров, поэтому блюда готовятся в течении 10 минут после вашего заказа",
+      "Мы любим нашу работу и наших гостей - качественное обслуживание и широкий выбор блюд никого не оставят равнодушным.",
+      "Атмосфера Японии в самом центре Москвы - отличный способ отдохнуть после тяжелого рабочего дня, или просто вкусно покушать!",
+      "Среднее время ожидание блюда в нашем ресторане - 10 минут. И вы всегда можете заказать доставку!",
+      "У нас самые лучшие повара и ингредиенты! - наши повара учтут все ваши предпочтения, чтобы вы в полной мере могли насладиться нашими блюдами.",
     ],
   },
   form: {
@@ -92,28 +96,26 @@ export const config: IConfig = {
     items: [
       {
         name: "Семён",
-        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        text: "Киото - одна из лучших раменных в нашем городе. Рекомендую к посещению! больше всего понравились местные покэ.",
         rating: 5,
+        img: "1.png"
       },
       {
-        name: "Семён",
-        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        name: "Юля",
+        text: "Вкусно готовят, классная атмосфера.",
         rating: 5,
+        img: "2.jpg"
       },
       {
-        name: "Семён",
-        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
+        name: "Влад",
+        text: "Однажды побывав здесь, вы обязательно захотите вернуться снова",
         rating: 5,
-      },
-      {
-        name: "Семён",
-        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
-        rating: 5,
+        img: "3.jpg"
       },
     ],
   },
   contacts: {
-    coordinates: [47.2372031, 39.7120899],
+    coordinates: [55.7597303, 37.6108415],
     time: "Пн. - Вс. 09:00 - 22:00",
   },
 };

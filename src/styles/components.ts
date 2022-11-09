@@ -1,12 +1,6 @@
 import styled, { css } from "styled-components";
 import { config } from "../configs/config";
 
-const { primary, secondary } = config.colors;
-
-function getColor(prop: boolean) {
-  return prop ? primary : secondary;
-}
-
 export const FlexColumnCenter = css`
   display: flex;
   flex-direction: column;
@@ -33,18 +27,20 @@ export const Button = styled.a<{ primary: boolean }>`
   height: 50px;
   width: 230px;
   border-radius: 25px;
-  border: 1px solid ${(props) => getColor(props.primary)};
+  border: 1px solid
+    ${({ primary, theme }) => (!!primary ? theme.colors.blackText : theme.colors.whiteText)};
   display: grid;
   place-items: center;
-  color: ${(props) => getColor(props.primary)};
+  color: ${({ primary, theme }) => (!!primary ? theme.colors.blackText : theme.colors.whiteText)};
   text-decoration: none;
   cursor: pointer;
   transition: ${({ theme }) => theme.duration};
   background: none;
 
   &:hover {
-    background: ${(props) => getColor(props.primary)};
-    color: ${(props) => getColor(!props.primary)};
+    background: ${({ primary, theme }) =>
+      !!primary ? theme.colors.blackText : theme.colors.whiteText};
+    color: ${({ primary, theme }) => (!!primary ? theme.colors.whiteText : theme.colors.blackText)};
   }
 `;
 
@@ -76,7 +72,8 @@ export const LinkList = styled.ul<LinkListProps>`
 
     a {
       text-decoration: none;
-      color: ${(props) => getColor(!!props.primary)}7d;
+      color: ${({ primary, theme }) =>
+        !!primary ? theme.colors.blackText : theme.colors.whiteText}7d;
       &:hover {
         text-decoration: underline;
       }
@@ -98,7 +95,7 @@ export const Input = styled.input`
   background-color: ${({ theme }) => theme.colors.secondary}1d;
   border-radius: 5px;
   border: 1px solid ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.whiteText};
   font-size: 15px;
   padding: 0 20px;
   margin: 0 15px;

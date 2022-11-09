@@ -5,8 +5,11 @@ export const MainSection = styled.div`
   position: relative;
   width: 100%;
   background: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.secondary};
   overflow: hidden;
+
+  p, span, h1 {
+    color: ${({theme}) => theme.colors.whiteText};
+  }
 `;
 
 export const MainSectionContainer = styled.div`
@@ -38,10 +41,12 @@ export const Image = styled.img`
 export const Information = styled.div`
   max-width: 550px;
   z-index: 4;
+  color: #123 !important;
   @media ${({ theme }) => theme.media.large} {
     text-align: center;
     ${FlexColumnCenter}
   }
+
   h1 {
     font-size: 45px;
     margin-bottom: 6px;

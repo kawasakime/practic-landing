@@ -21,7 +21,7 @@ export const AdvantageItem = styled.div`
   padding: 35px 22px;
   display: grid;
   place-items: center;
-  border: 1px solid ${({theme}) => theme.colors.primary}2d;
+  border: 1px solid ${({ theme }) => theme.colors.primary}20;
   border-radius: 10px;
   margin-bottom: 20px;
 
@@ -30,8 +30,8 @@ export const AdvantageItem = styled.div`
     font-size: 50px;
     left: 20px;
     top: 0;
-    color: #D0D0CF; // ВОЗМОЖНО ЗАМЕНИТЬ
-    font-weight: ${({theme}) => theme.fontWeight.black};
+    color: ${({ theme }) => theme.colors.additional};
+    font-weight: ${({ theme }) => theme.fontWeight.black};
     margin: 0;
     transform: translateY(-50%);
   }

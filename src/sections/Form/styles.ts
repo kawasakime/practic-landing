@@ -40,7 +40,7 @@ export const Background = styled.div`
 export const Title = styled.h1`
   text-align: center;
   font-size: 24px;
-  color: ${({theme}) => theme.colors.secondary};
+  color: ${({theme}) => theme.colors.whiteText};
   font-weight: ${({theme}) => theme.fontWeight.light};
   margin-bottom: 15px;
   margin-top: 0;
@@ -50,7 +50,7 @@ export const Title = styled.h1`
   
   span {
     font-size: 18px;
-    color: ${({theme}) => theme.colors.secondary}5d;
+    color: ${({theme}) => theme.colors.whiteText}50;
     margin-top: 4px;
   }
 `

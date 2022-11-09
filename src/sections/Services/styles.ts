@@ -4,7 +4,10 @@ import { GridCenter } from "../../styles/components";
 export const Services = styled.div`
   background: ${({ theme }) => theme.colors.primary};
   padding: 115px 0;
-  color: ${({ theme }) => theme.colors.secondary};
+
+  h1, li, span {
+    color: ${({theme}) => theme.colors.whiteText};
+  }
 
   .wrapper {
     display: flex;
@@ -61,7 +64,7 @@ export const ImageShadow = styled.div`
   background: radial-gradient(
     50% 50% at 50% 50%,
     #ffffff 0%,
-    rgba(255, 255, 255, 0) 100%
+    ${({theme}) => theme.colors.secondary}10 100%
   );
   filter: blur(50px);
   @media ${({ theme }) => theme.media.large} {

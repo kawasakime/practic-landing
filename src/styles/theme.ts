@@ -5,6 +5,9 @@ export const baseTheme: ITheme = {
   colors: {
     primary: config.colors.primary,
     secondary: config.colors.secondary,
+    blackText: config.colors.blackText,
+    whiteText: config.colors.whiteText,
+    additional: config.colors.additional,
   },
   fontWeight: {
     light: 300,
@@ -18,6 +21,6 @@ export const baseTheme: ITheme = {
     large: "(max-width: 1200px)",
     lessLarge: "(max-width: 1000px)",
     medium: "(max-width: 680px)",
-    small: "(max-width: 580px)"
+    small: "(max-width: 580px)",
   },
 };

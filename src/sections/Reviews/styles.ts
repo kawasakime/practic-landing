@@ -11,9 +11,9 @@ export const Reviews = styled.div`
 export const ReviewsWrapper = styled.div`
   width: 100%;
   overflow: hidden;
-`
+`;
 
-export const ReviewsContainer = styled.div<{ slidesCount: number, leftPosition: number}>`
+export const ReviewsContainer = styled.div<{ slidesCount: number; leftPosition: number }>`
   position: relative;
   padding-top: 20px;
   display: grid;
@@ -21,7 +21,19 @@ export const ReviewsContainer = styled.div<{ slidesCount: number, leftPosition: 
   place-items: center;
   margin-top: 50px;
   right: ${(props) => props.leftPosition}%;
-  transition: right ${({theme}) => theme.duration};
+  transition: right ${({ theme }) => theme.duration};
+`;
+
+export const ImageContainer = styled.div<{ imgUrl: string }>`
+  min-height: 150px;
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-image: url(${({ imgUrl }) => imgUrl});
+  background-position: center center;
+  background-size: cover;
 `;
 
 export const ReviewItem = styled.div`
@@ -29,7 +41,7 @@ export const ReviewItem = styled.div`
   height: 100%;
   max-width: 600px;
   min-width: 300px;
-  background: ${({ theme }) => theme.colors.primary}1d;
+  background: ${({ theme }) => theme.colors.primary}08;
   display: flex;
   align-items: center;
   margin-left: 90px;
@@ -81,18 +93,18 @@ export const Arrows = styled.div`
   justify-content: center;
 
   & > * {
-    fill: ${({theme}) => theme.colors.primary};
+    fill: ${({ theme }) => theme.colors.primary};
     margin: 0 15px;
     cursor: pointer;
-    transition: ${({theme}) => theme.duration};
+    transition: ${({ theme }) => theme.duration};
 
     &.disabled {
       pointer-events: none;
-      opacity: .5;
+      opacity: 0.5;
     }
 
     &:hover {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
 `;

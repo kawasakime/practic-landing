@@ -8,6 +8,7 @@ export const Header = styled.div`
   padding: 40px 0;
   background: ${({ theme }) => theme.colors.primary};
   width: 100%;
+  color: ${({theme}) => theme.colors.whiteText};
 
   @media ${({ theme }) => theme.media.large} {
     .navigation {
