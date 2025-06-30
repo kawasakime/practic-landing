@@ -25,7 +25,7 @@ export const config: IConfig = {
       link: "",
     },
     {
-      title: "Instagram",
+      title: "WhatsApp",
       link: "",
     },
   ],
